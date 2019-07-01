@@ -9,11 +9,11 @@
 <body>
 
     <script>
-        var xml = new XMLHttpRequest()
-        xml.open('GET', '/music/cate.json', 'true')
-        xml.send()
-        xml.onload = function(date) {
-            console.log(date)
+        var xhr = new XMLHttpRequest()
+        xhr.open('GET', '/music/cate.json', 'true')
+        xhr.send()
+        xhr.onload = function() {
+            console.log(JSON.parse(xhr.responseText))
         }
     </script>
 
