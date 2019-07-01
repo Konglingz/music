@@ -9,7 +9,7 @@
 <body>
 
     <script>
-        var xml = XMLHttpRequest()
+        var xml = new XMLHttpRequest()
         xml.open('GET', '/cate.json', 'true')
         xml.send()
         xml.onload = function(date) {
