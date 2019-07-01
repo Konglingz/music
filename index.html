@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>music</title>
+</head>
+
+<body>
+
+    <script>
+        var xml = XMLHttpRequest()
+        xml.open('GET', '/cate.json', 'true')
+        xml.send()
+        xml.onload = function(date) {
+            console.log(date)
+        }
+    </script>
+
+</body>
+
+</html>
